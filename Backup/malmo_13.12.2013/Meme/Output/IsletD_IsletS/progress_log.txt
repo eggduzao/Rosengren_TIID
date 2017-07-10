@@ -1,0 +1,50 @@
+Invoking:
+  fasta-get-markov -nostatus -m 1 < ./isletd_islets_diff_cut_20.bed 1> ./background
+Finished invoke:
+  name: bg  status: 0  time: 20.077677
+Invoking:
+  getsize ./isletd_islets_diff_cut_20.bed 1> $metrics
+Finished invoke:
+  name: count_seqs  status: 0  time: 0.306343
+Invoking:
+  fasta-most -min 50 < ./isletd_islets_diff_cut_20.bed 1> $metrics
+Finished invoke:
+  name: most_seqs  status: 0  time: 0.535499
+Invoking:
+  fasta-center -len 100 < ./isletd_islets_diff_cut_20.bed 1> ./seqs-centered
+Finished invoke:
+  name: center_seqs  status: 0  time: 1.284722
+Invoking:
+  fasta-dinucleotide-shuffle -f ./seqs-centered -t -dinuc 1> ./seqs-shuffled
+Finished invoke:
+  name: shuffle_seqs  status: 0  time: 50.655742
+Invoking:
+  fasta-subsample ./seqs-centered 600 -rest ./seqs-discarded 1> ./seqs-sampled
+Finished invoke:
+  name: sample_seqs  status: 0  time: 1.411257
+Invoking:
+  meme ./seqs-sampled -oc meme_out -dna -mod zoops -nmotifs 3 -minw 6 -maxw 30 -bfile ./background -time 2362 -revcomp -nostatus
+Finished invoke:
+  name: meme  status: 0  time: 1386.550509
+Invoking:
+  dreme -v 1 -oc dreme_out -p ./seqs-centered -n ./seqs-shuffled -png -t 2896 -e 0.05
+Finished invoke:
+  name: dreme  status: 0  time: 2895.665856
+Invoking:
+  centrimo -noflip -seqlen 150 -verbosity 1 -oc centrimo_out -bgfile ./background -score 5 -ethresh 10 ./isletd_islets_diff_cut_20.bed meme_out/meme.xml dreme_out/dreme.xml db/JASPAR_CORE_2009.meme db/uniprobe_mouse.meme
+Finished invoke:
+  name: centrimo  status: 0  time: 1221.758227
+Invoking:
+  tomtom -verbosity 1 -oc meme_tomtom_out -min-overlap 5 -dist pearson -evalue -thresh 1 -no-ssc -bfile ./background meme_out/meme.xml db/JASPAR_CORE_2009.meme db/uniprobe_mouse.meme
+Finished invoke:
+  name: meme_tomtom  status: 0  time: 44.393139
+Invoking:
+  tomtom -verbosity 1 -oc dreme_tomtom_out -min-overlap 5 -dist pearson -evalue -thresh 1 -no-ssc -bfile ./background dreme_out/dreme.xml db/JASPAR_CORE_2009.meme db/uniprobe_mouse.meme
+Finished invoke:
+  name: dreme_tomtom  status: 0  time: 3.084242
+Invoking:
+  tomtom -verbosity 1 -text -thresh 0.5 ./combined.meme ./combined.meme 1> ./motif_alignment.txt
+Finished invoke:
+  name: align  status: 0  time: 31.701159
+Writing output
+Done

@@ -1,0 +1,481 @@
+<script type="text/javascript" src="../fig/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="../fig/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="../fig/jquery.metadata.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+    { 
+        $("#hor-zebra").tablesorter(); 
+    } 
+); 
+</script>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html"><title>RGT Viz</title>
+<style type="text/css">
+<!--
+@import url("../fig/style.css");
+-->
+</style></head>
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginheight="0" marginwidth="0" bgcolor="#FFFFFF">
+<h3 style="background-color:white; border-top:5px solid black; border-bottom: 5px solid black;">
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="8%"><img border="0" src="../fig/rgt_logo.gif" width="130" height="100"></td>
+    <td width="92%"><p align="left"><font color="black" size="6">Regulatory Genomics Toolbox - Viz</font></td>
+  </tr>
+</table>
+</h3>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100%"><font color="black" face="Arial" size="4"><b>&nbsp;&nbsp;
+    <a href="projection.html">projection_test</a>
+    </b></font></td>
+  </tr>
+</table>
+<p align="center"><img src="projection_test.png" width=800></p>
+<p style="margin-left: 50"><font color="black" face="Arial" size="4">
+All region sets without grouping
+</font></p>
+<p style="margin-left: 50">
+<table id="hor-zebra" class="tablesorter">
+  <thead><tr>
+    <th scope="col" width="10" align="center">Reference<br>name</th>
+    <th scope="col" width="10" align="center">Query<br>name</th>
+    <th scope="col" width="10" align="center">Reference<br>number</th>
+    <th scope="col" width="10" align="center">Query<br>number</th>
+    <th scope="col" width="10" align="center">Proportion</th>
+    <th scope="col" width="10" align="center">Background<br>proportion</th>
+    <th scope="col" width="15" align="center">Positive<br>association<br>p-value</th>
+    <th scope="col" width="15" align="center">Negative<br>association<br>p-value</th>
+  </tr></thead>
+  <tbody>
+    <tr class="odd">
+      <td align="center">CHIP_FOXA2_32</td>
+      <td align="center">MPBS_BARX2</td>
+      <td align="center">20640</td>
+      <td align="center">131</td>
+      <td align="center">0.0153</td>
+      <td align="center">0.0041</td>
+      <td align="center">0.4834</td>
+      <td align="center">0.5166</td>
+    </tr>
+    <tr>
+      <td align="center">CHIP_FOXA2_32</td>
+      <td align="center">MPBS_FOXP2</td>
+      <td align="center">20640</td>
+      <td align="center">322</td>
+      <td align="center">0.0062</td>
+      <td align="center">0.0041</td>
+      <td align="center">0.7337</td>
+      <td align="center">0.2663</td>
+    </tr>
+    <tr class="odd">
+      <td align="center">CHIP_FOXA2_32</td>
+      <td align="center">MPBS_NKX6-1</td>
+      <td align="center">20640</td>
+      <td align="center">179</td>
+      <td align="center">0.0168</td>
+      <td align="center">0.0041</td>
+      <td align="center">0.3933</td>
+      <td align="center">0.6067</td>
+    </tr>
+    <tr>
+      <td align="center">CHIP_FOXA2_32</td>
+      <td align="center">MPBS_PDX1</td>
+      <td align="center">20640</td>
+      <td align="center">235</td>
+      <td align="center">0.0085</td>
+      <td align="center">0.0041</td>
+      <td align="center">0.6327</td>
+      <td align="center">0.3673</td>
+    </tr>
+    <tr class="odd">
+      <td align="center">CHIP_FOXA2_32</td>
+      <td align="center">MPBS_SOX5</td>
+      <td align="center">20640</td>
+      <td align="center">313</td>
+      <td align="center">0.0096</td>
+      <td align="center">0.0041</td>
+      <td align="center">0.5569</td>
+      <td align="center">0.4431</td>
+    </tr>
+    <tr>
+      <td align="center">CHIP_FOXA2_101</td>
+      <td align="center">MPBS_BARX2</td>
+      <td align="center">53376</td>
+      <td align="center">131</td>
+      <td align="center">0.0305</td>
+      <td align="center">0.0127</td>
+      <td align="center">0.4834</td>
+      <td align="center">0.5166</td>
+    </tr>
+    <tr class="odd">
+      <td align="center">CHIP_FOXA2_101</td>
+      <td align="center">MPBS_FOXP2</td>
+      <td align="center">53376</td>
+      <td align="center">322</td>
+      <td align="center">0.0186</td>
+      <td align="center">0.0127</td>
+      <td align="center">0.6327</td>
+      <td align="center">0.3673</td>
+    </tr>
+    <tr>
+      <td align="center">CHIP_FOXA2_101</td>
+      <td align="center">MPBS_NKX6-1</td>
+      <td align="center">53376</td>
+      <td align="center">179</td>
+      <td align="center">0.0223</td>
+      <td align="center">0.0127</td>
+      <td align="center">0.6327</td>
+      <td align="center">0.3673</td>
+    </tr>
+    <tr class="odd">
+      <td align="center">CHIP_FOXA2_101</td>
+      <td align="center">MPBS_PDX1</td>
+      <td align="center">53376</td>
+      <td align="center">235</td>
+      <td align="center">0.0213</td>
+      <td align="center">0.0127</td>
+      <td align="center">0.6135</td>
+      <td align="center">0.3865</td>
+    </tr>
+    <tr>
+      <td align="center">CHIP_FOXA2_101</td>
+      <td align="center">MPBS_SOX5</td>
+      <td align="center">53376</td>
+      <td align="center">313</td>
+      <td align="center">0.0192</td>
+      <td align="center">0.0127</td>
+      <td align="center">0.6327</td>
+      <td align="center">0.3673</td>
+    </tr>
+    <tr class="odd">
+      <td align="center">CHIP_NKX2_2_87</td>
+      <td align="center">MPBS_BARX2</td>
+      <td align="center">52395</td>
+      <td align="center">131</td>
+      <td align="center">0.0382</td>
+      <td align="center">0.0147</td>
+      <td align="center">0.3933</td>
+      <td align="center">0.6067</td>
+    </tr>
+    <tr>
+      <td align="center">CHIP_NKX2_2_87</td>
+      <td align="center">MPBS_FOXP2</td>
+      <td align="center">52395</td>
+      <td align="center">322</td>
+      <td align="center">0.0280</td>
+      <td align="center">0.0147</td>
+      <td align="center">0.3933</td>
+      <td align="center">0.6067</td>
+    </tr>
+    <tr class="odd">
+      <td align="center">CHIP_NKX2_2_87</td>
+      <td align="center">MPBS_NKX6-1</td>
+      <td align="center">52395</td>
+      <td align="center">179</td>
+      <td align="center">0.0447</td>
+      <td align="center">0.0147</td>
+      <td align="center">0.2113</td>
+      <td align="center">0.7887</td>
+    </tr>
+    <tr>
+      <td align="center">CHIP_NKX2_2_87</td>
+      <td align="center">MPBS_PDX1</td>
+      <td align="center">52395</td>
+      <td align="center">235</td>
+      <td align="center">0.0340</td>
+      <td align="center">0.0147</td>
+      <td align="center">0.3933</td>
+      <td align="center">0.6067</td>
+    </tr>
+    <tr class="odd">
+      <td align="center">CHIP_NKX2_2_87</td>
+      <td align="center">MPBS_SOX5</td>
+      <td align="center">52395</td>
+      <td align="center">313</td>
+      <td align="center">0.0288</td>
+      <td align="center">0.0147</td>
+      <td align="center">0.3933</td>
+      <td align="center">0.6067</td>
+    </tr>
+    <tr>
+      <td align="center">CHIP_NKX2_2_88</td>
+      <td align="center">MPBS_BARX2</td>
+      <td align="center">37592</td>
+      <td align="center">131</td>
+      <td align="center">0.0229</td>
+      <td align="center">0.0088</td>
+      <td align="center">0.4834</td>
+      <td align="center">0.5166</td>
+    </tr>
+    <tr class="odd">
+      <td align="center">CHIP_NKX2_2_88</td>
+      <td align="center">MPBS_FOXP2</td>
+      <td align="center">37592</td>
+      <td align="center">322</td>
+      <td align="center">0.0155</td>
+      <td align="center">0.0088</td>
+      <td align="center">0.6109</td>
+      <td align="center">0.3891</td>
+    </tr>
+    <tr>
+      <td align="center">CHIP_NKX2_2_88</td>
+      <td align="center">MPBS_NKX6-1</td>
+      <td align="center">37592</td>
+      <td align="center">179</td>
+      <td align="center">0.0168</td>
+      <td align="center">0.0088</td>
+      <td align="center">0.6109</td>
+      <td align="center">0.3891</td>
+    </tr>
+    <tr class="odd">
+      <td align="center">CHIP_NKX2_2_88</td>
+      <td align="center">MPBS_PDX1</td>
+      <td align="center">37592</td>
+      <td align="center">235</td>
+      <td align="center">0.0170</td>
+      <td align="center">0.0088</td>
+      <td align="center">0.5569</td>
+      <td align="center">0.4431</td>
+    </tr>
+    <tr>
+      <td align="center">CHIP_NKX2_2_88</td>
+      <td align="center">MPBS_SOX5</td>
+      <td align="center">37592</td>
+      <td align="center">313</td>
+      <td align="center">0.0160</td>
+      <td align="center">0.0088</td>
+      <td align="center">0.6109</td>
+      <td align="center">0.3891</td>
+    </tr>
+    <tr class="odd">
+      <td align="center">CHIP_NKX6_1_102</td>
+      <td align="center">MPBS_BARX2</td>
+      <td align="center">14331</td>
+      <td align="center">131</td>
+      <td align="center">0</td>
+      <td align="center">0.0039</td>
+      <td align="center">1.00</td>
+      <td align="center">0</td>
+    </tr>
+    <tr>
+      <td align="center">CHIP_NKX6_1_102</td>
+      <td align="center">MPBS_FOXP2</td>
+      <td align="center">14331</td>
+      <td align="center">322</td>
+      <td align="center">0.0031</td>
+      <td align="center">0.0039</td>
+      <td align="center">1.00</td>
+      <td align="center">0</td>
+    </tr>
+    <tr class="odd">
+      <td align="center">CHIP_NKX6_1_102</td>
+      <td align="center">MPBS_NKX6-1</td>
+      <td align="center">14331</td>
+      <td align="center">179</td>
+      <td align="center">0</td>
+      <td align="center">0.0039</td>
+      <td align="center">1.00</td>
+      <td align="center">0</td>
+    </tr>
+    <tr>
+      <td align="center">CHIP_NKX6_1_102</td>
+      <td align="center">MPBS_PDX1</td>
+      <td align="center">14331</td>
+      <td align="center">235</td>
+      <td align="center">0.0043</td>
+      <td align="center">0.0039</td>
+      <td align="center">1.00</td>
+      <td align="center">0</td>
+    </tr>
+    <tr class="odd">
+      <td align="center">CHIP_NKX6_1_102</td>
+      <td align="center">MPBS_SOX5</td>
+      <td align="center">14331</td>
+      <td align="center">313</td>
+      <td align="center">0.0032</td>
+      <td align="center">0.0039</td>
+      <td align="center">1.00</td>
+      <td align="center">0</td>
+    </tr>
+    <tr>
+      <td align="center">CHIP_NKX6_1_118</td>
+      <td align="center">MPBS_BARX2</td>
+      <td align="center">5030</td>
+      <td align="center">131</td>
+      <td align="center">0</td>
+      <td align="center">0.0012</td>
+      <td align="center">1.00</td>
+      <td align="center">0</td>
+    </tr>
+    <tr class="odd">
+      <td align="center">CHIP_NKX6_1_118</td>
+      <td align="center">MPBS_FOXP2</td>
+      <td align="center">5030</td>
+      <td align="center">322</td>
+      <td align="center">0</td>
+      <td align="center">0.0012</td>
+      <td align="center">1.00</td>
+      <td align="center">0</td>
+    </tr>
+    <tr>
+      <td align="center">CHIP_NKX6_1_118</td>
+      <td align="center">MPBS_NKX6-1</td>
+      <td align="center">5030</td>
+      <td align="center">179</td>
+      <td align="center">0</td>
+      <td align="center">0.0012</td>
+      <td align="center">1.00</td>
+      <td align="center">0</td>
+    </tr>
+    <tr class="odd">
+      <td align="center">CHIP_NKX6_1_118</td>
+      <td align="center">MPBS_PDX1</td>
+      <td align="center">5030</td>
+      <td align="center">235</td>
+      <td align="center">0</td>
+      <td align="center">0.0012</td>
+      <td align="center">1.00</td>
+      <td align="center">0</td>
+    </tr>
+    <tr>
+      <td align="center">CHIP_NKX6_1_118</td>
+      <td align="center">MPBS_SOX5</td>
+      <td align="center">5030</td>
+      <td align="center">313</td>
+      <td align="center">0</td>
+      <td align="center">0.0012</td>
+      <td align="center">1.00</td>
+      <td align="center">0</td>
+    </tr>
+    <tr class="odd">
+      <td align="center">CHIP_PDX1_32</td>
+      <td align="center">MPBS_BARX2</td>
+      <td align="center">12153</td>
+      <td align="center">131</td>
+      <td align="center">0</td>
+      <td align="center">0.0036</td>
+      <td align="center">1.00</td>
+      <td align="center">0</td>
+    </tr>
+    <tr>
+      <td align="center">CHIP_PDX1_32</td>
+      <td align="center">MPBS_FOXP2</td>
+      <td align="center">12153</td>
+      <td align="center">322</td>
+      <td align="center">0.0031</td>
+      <td align="center">0.0036</td>
+      <td align="center">1.00</td>
+      <td align="center">0</td>
+    </tr>
+    <tr class="odd">
+      <td align="center">CHIP_PDX1_32</td>
+      <td align="center">MPBS_NKX6-1</td>
+      <td align="center">12153</td>
+      <td align="center">179</td>
+      <td align="center">0</td>
+      <td align="center">0.0036</td>
+      <td align="center">1.00</td>
+      <td align="center">0</td>
+    </tr>
+    <tr>
+      <td align="center">CHIP_PDX1_32</td>
+      <td align="center">MPBS_PDX1</td>
+      <td align="center">12153</td>
+      <td align="center">235</td>
+      <td align="center">0.0043</td>
+      <td align="center">0.0036</td>
+      <td align="center">1.00</td>
+      <td align="center">0</td>
+    </tr>
+    <tr class="odd">
+      <td align="center">CHIP_PDX1_32</td>
+      <td align="center">MPBS_SOX5</td>
+      <td align="center">12153</td>
+      <td align="center">313</td>
+      <td align="center">0.0064</td>
+      <td align="center">0.0036</td>
+      <td align="center">0.6327</td>
+      <td align="center">0.3673</td>
+    </tr>
+    <tr>
+      <td align="center">CHIP_PDX1_45</td>
+      <td align="center">MPBS_BARX2</td>
+      <td align="center">18294</td>
+      <td align="center">131</td>
+      <td align="center">0</td>
+      <td align="center">0.0047</td>
+      <td align="center">1.00</td>
+      <td align="center">0</td>
+    </tr>
+    <tr class="odd">
+      <td align="center">CHIP_PDX1_45</td>
+      <td align="center">MPBS_FOXP2</td>
+      <td align="center">18294</td>
+      <td align="center">322</td>
+      <td align="center">0.0062</td>
+      <td align="center">0.0047</td>
+      <td align="center">1.00</td>
+      <td align="center">0</td>
+    </tr>
+    <tr>
+      <td align="center">CHIP_PDX1_45</td>
+      <td align="center">MPBS_NKX6-1</td>
+      <td align="center">18294</td>
+      <td align="center">179</td>
+      <td align="center">0</td>
+      <td align="center">0.0047</td>
+      <td align="center">1.00</td>
+      <td align="center">0</td>
+    </tr>
+    <tr class="odd">
+      <td align="center">CHIP_PDX1_45</td>
+      <td align="center">MPBS_PDX1</td>
+      <td align="center">18294</td>
+      <td align="center">235</td>
+      <td align="center">0.0043</td>
+      <td align="center">0.0047</td>
+      <td align="center">1.00</td>
+      <td align="center">0</td>
+    </tr>
+    <tr>
+      <td align="center">CHIP_PDX1_45</td>
+      <td align="center">MPBS_SOX5</td>
+      <td align="center">18294</td>
+      <td align="center">313</td>
+      <td align="center">0.0032</td>
+      <td align="center">0.0047</td>
+      <td align="center">1.00</td>
+      <td align="center">0</td>
+    </tr>
+</tbody></table></p>
+<p style="margin-left: 50">
+<table id="hor-zebra" class="tablesorter">
+  <thead><tr>
+    <th scope="col" width="10" align="left">Assumptions and hypothesis</th>
+  </tr></thead>
+  <tbody>
+    <tr class="odd">
+      <td align="left">If the background proportion is too small, it may cause bias in p value.</td>
+    </tr>
+    <tr>
+      <td align="left">For projection test, the reference GenomicRegionSet should have non-zero length in order to calculate its background proportion.</td>
+    </tr>
+    <tr class="odd">
+      <td align="left">P values are corrected by multiple test correction.</td>
+    </tr>
+    <tr>
+      <td align="left">Positive association is defined by: Proportion > Background.</td>
+    </tr>
+    <tr class="odd">
+      <td align="left">Negative association is defined by: Proportion < Background.</td>
+    </tr>
+</tbody></table></p>
+<a href="parameters.txt" style="margin-left:100">See parameters</a>
+<br><br>
+<p align="center"><font face="Arial" color="#000000" size="2">
+For more details please visit the <a href="http://www.regulatory-genomics.org/"> RGT Website </a>
+</font></p>
+<h3 style="background-color:white; border-top:10px solid black;"></h3>
+</body>
+</html>
