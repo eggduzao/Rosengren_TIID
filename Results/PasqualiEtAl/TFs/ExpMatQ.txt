@@ -1,7 +1,0 @@
-name	type	file	type
-# MPBSs
-MPBS_BARX2	regions	./Input/BARX2_coexpressed_genes_promoter_merged.bed	MPBS
-MPBS_FOXP2	regions	./Input/FOXP2_coexpressed_genes_promoter_merged.bed	MPBS
-MPBS_NKX6-1	regions	./Input/NKX6-1_coexpressed_genes_promoter_merged.bed	MPBS
-MPBS_PDX1	regions	./Input/PDX1_coexpressed_genes_promoter_merged.bed	MPBS
-MPBS_SOX5	regions	./Input/SOX5_coexpressed_genes_promoter_merged.bed	MPBS
